@@ -1,0 +1,27 @@
+create table avioes (
+id INT NOT NULL AUTO_INCREMENT,
+numeroRegistro INT,
+modelo VARCHAR(50),
+qtdAssentos INT,
+qtdAssentosEspeciais INT,
+PRIMARY KEY (id)
+);
+
+    create table voos (
+        id INT NOT NULL AUTO_INCREMENT,
+        numeroVoo INT,
+        data DATE,
+        horario TIME,
+        origem VARCHAR(50),
+        destino VARCHAR(50),
+        valorNormal FLOAT,
+        valorEspecial FLOAT,
+        PRIMARY KEY (id)
+    );
+                                        
+Mysql JS  sql
+Mysql SQL  connect root@localhost
+            use teste;
+
+
+# INSERT INTO avioes (numeroRegistro, modelo, qtdAssentos, qtdAssentosEspeciais) VALUES (%s,%s,%s,%s)
